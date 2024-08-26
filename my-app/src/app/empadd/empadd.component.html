@@ -1,0 +1,43 @@
+<p>empadd works!</p>
+<div class ="container">
+    <p>employee-create works!</p>
+
+    <form [formGroup]="empform" (ngSubmit)="onsubmit()">
+     
+        
+            <table>
+                <tr>
+                    <td> <label>Employee Id</label></td>
+                    <td><input type="text" class ="form-control" id = "empid" formControlName ="empid"> </td>
+                </tr>
+                <tr>
+                    <td> <label>Employee Name</label></td>
+                    <td><input type="text" id="ename" formControlName ="ename"  class="form-control">
+                        
+                  
+                 </td>
+                </tr>
+                <tr>
+                    <td><label>Employee Phone</label></td>
+                    <td><input type="text" class ="form-control" id = "phone" formControlName ="phone"></td>
+             
+                </tr>
+                <tr>
+                    <td><label>Employee City</label></td>
+                    <td><input type="text" class ="form-control" id = "city" formControlName ="city"></td>
+                   
+                </tr>
+                
+                <tr>
+                    <td>
+                        <button class="btn-success" type ="submit" >Submit</button>
+                    </td>
+                </tr>
+            </table>
+           
+        
+    
+            
+       
+    </form>
+    </div>

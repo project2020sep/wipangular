@@ -1,0 +1,23 @@
+<p>firstcomponent works!</p>
+
+<div class="container">
+    <h1>EMPLOYEE LIST</h1>
+
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <td>Empname</td>
+                <td>EmpPhone</td>
+                <td>EmpCity</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees | async">
+                <td>{{emp.ename}}</td>
+                <td>{{emp.phone}}</td>
+                <td>{{emp.city}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
